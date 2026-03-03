@@ -93,6 +93,11 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "env-cache": [
+            "@php artisan optimize",
+            "@php artisan config:cache",
+            "@php artisan config:clear"
         ]
     },
     "extra": {
